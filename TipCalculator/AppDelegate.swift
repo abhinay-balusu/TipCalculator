@@ -16,7 +16,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        if(UserDefaults.standard.value(forKey: "dateTime") != nil)
+        {
+            let storedDate = UserDefaults.standard.value(forKey: "dateTime") as! Date
+            let currentDate = Date()
+            
+            if(minutesBetweenDates(startDate: storedDate, endDate: currentDate) > 10)
+            {
+                UserDefaults.standard.set("0.00", forKey: "amount")
+            }
+        }
+        
+        
         return true
+    }
+    
+    func minutesBetweenDates(startDate: Date, endDate: Date) -> Int {
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([Calendar.Component.minute], from: startDate, to: endDate)
+        return components.minute!
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

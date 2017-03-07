@@ -48,6 +48,12 @@ class ViewController: UIViewController , UITextFieldDelegate{
         
         amount.becomeFirstResponder()
         
+        if(UserDefaults.standard.object(forKey: "amount") != nil)
+        {
+            amount.text = UserDefaults.standard.object(forKey: "amount") as! String?
+        }
+        
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -102,6 +108,9 @@ class ViewController: UIViewController , UITextFieldDelegate{
         {
             inputAmount = Double(textField.text!)
             setTipValueAndPersonShares()
+            
+            UserDefaults.standard.set(textField.text!, forKey: "amount")
+            UserDefaults.standard.set(Date(), forKey: "dateTime")
         }
         else
         {
