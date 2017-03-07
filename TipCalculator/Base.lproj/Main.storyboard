@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D30a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4jw-Dg-hpG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E163f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4jw-Dg-hpG">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -46,19 +46,19 @@
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mzn-Ul-LeI">
-                                <rect key="frame" x="16" y="292" width="142" height="50"/>
+                                <rect key="frame" x="16" y="292" width="40" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="OnN-hG-Fde"/>
-                                    <constraint firstAttribute="width" constant="142" id="egO-0I-MMo"/>
+                                    <constraint firstAttribute="width" constant="40" id="egO-0I-MMo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rjb-Qb-8FY">
-                                <rect key="frame" x="166" y="291" width="193" height="50"/>
+                                <rect key="frame" x="64" y="291" width="295" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="193" id="4zj-zp-vfa"/>
+                                    <constraint firstAttribute="width" constant="295" id="4zj-zp-vfa"/>
                                     <constraint firstAttribute="height" constant="50" id="VYN-gN-VdG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
@@ -66,9 +66,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="**" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q00-pP-Htz">
-                                <rect key="frame" x="16" y="350" width="142" height="50"/>
+                                <rect key="frame" x="16" y="350" width="40" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="142" id="4RU-1Q-Mij"/>
+                                    <constraint firstAttribute="width" constant="40" id="4RU-1Q-Mij"/>
                                     <constraint firstAttribute="height" constant="50" id="vsq-yD-PyF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -76,9 +76,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQF-qT-PDi">
-                                <rect key="frame" x="166" y="350" width="193" height="50"/>
+                                <rect key="frame" x="64" y="350" width="295" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="193" id="eX4-Ad-cuu"/>
+                                    <constraint firstAttribute="width" constant="295" id="eX4-Ad-cuu"/>
                                     <constraint firstAttribute="height" constant="50" id="qGj-kB-oDs"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
@@ -86,19 +86,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="***" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rse-Y2-6Fe">
-                                <rect key="frame" x="16" y="408" width="142" height="50"/>
+                                <rect key="frame" x="16" y="408" width="40" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="5DH-wa-lwr"/>
-                                    <constraint firstAttribute="width" constant="142" id="QTk-64-2i2"/>
+                                    <constraint firstAttribute="width" constant="40" id="QTk-64-2i2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXi-ev-ZNd">
-                                <rect key="frame" x="166" y="408" width="193" height="50"/>
+                                <rect key="frame" x="64" y="408" width="295" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="193" id="QJc-V2-9De"/>
+                                    <constraint firstAttribute="width" constant="295" id="QJc-V2-9De"/>
                                     <constraint firstAttribute="height" constant="50" id="xpU-MO-Pc1"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
@@ -106,9 +106,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="****" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Teq-gX-zBQ">
-                                <rect key="frame" x="16" y="466" width="142" height="50"/>
+                                <rect key="frame" x="16" y="466" width="40" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="142" id="2Ci-cu-Nmr"/>
+                                    <constraint firstAttribute="width" constant="40" id="2Ci-cu-Nmr"/>
                                     <constraint firstAttribute="height" constant="50" id="PYo-yS-lc9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -116,10 +116,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CjG-4U-6FJ">
-                                <rect key="frame" x="166" y="466" width="193" height="50"/>
+                                <rect key="frame" x="64" y="466" width="295" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="AbB-D5-XRF"/>
-                                    <constraint firstAttribute="width" constant="193" id="agx-yE-1p5"/>
+                                    <constraint firstAttribute="width" constant="295" id="agx-yE-1p5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

@@ -46,7 +46,20 @@ class ViewController: UIViewController , UITextFieldDelegate{
         
         amount.inputAccessoryView = toolbar
         
+        amount.becomeFirstResponder()
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print("View Did Appear")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        print("View Will DisAppear")
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        print("View Did DisAppear")
     }
     
     func doneWithNumberPad()
@@ -55,6 +68,7 @@ class ViewController: UIViewController , UITextFieldDelegate{
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        print("View Will Appear")
         inputAmount = 0.0
         
         tipSegment.selectedSegmentIndex = 0
@@ -133,27 +147,39 @@ class ViewController: UIViewController , UITextFieldDelegate{
         let tipFormat = ((inputAmount * Double(tipPercentageValue))/100)
         tip.text = "\(tipFormat)"
         
-        onePersonShareLabel.text = "$\(Double(round(100 * (inputAmount+tipFormat))/100))"
+        onePersonShareLabel.text = getLocalCurrencyValue(amount: Double(round(100 * (inputAmount+tipFormat))/100))
         
-        twoPersonShareLabel.text = "$\(Double(round(100 * (inputAmount+tipFormat)/2)/100))"
+        twoPersonShareLabel.text = getLocalCurrencyValue(amount: Double(round(100 * (inputAmount+tipFormat)/2)/100))
         
-        threePersonShareLabel.text = "$\(Double(round(100 * (inputAmount+tipFormat)/3)/100))"
+        threePersonShareLabel.text = getLocalCurrencyValue(amount: Double(round(100 * (inputAmount+tipFormat)/3)/100))
         
-        fourPersonShareLabel.text = "$\(Double(round(100 * (inputAmount+tipFormat)/4)/100))"
+        fourPersonShareLabel.text = getLocalCurrencyValue(amount: Double(round(100 * (inputAmount+tipFormat)/4)/100))
     }
     
     func clearLabels()
     {
         tip.text = "0.00%"
         
-        onePersonShareLabel.text = "$0.00"
+        onePersonShareLabel.text = getLocalCurrencyValue(amount: 0.00)
         
-        twoPersonShareLabel.text = "$0.00"
+        twoPersonShareLabel.text = getLocalCurrencyValue(amount: 0.00)
         
-        threePersonShareLabel.text = "$0.00"
+        threePersonShareLabel.text = getLocalCurrencyValue(amount: 0.00)
         
-        fourPersonShareLabel.text = "$0.00"
+        fourPersonShareLabel.text = getLocalCurrencyValue(amount: 0.00)
 
+    }
+    
+    func getLocalCurrencyValue(amount: Double) -> String
+    {
+        let currencyFormatter = NumberFormatter()
+        currencyFormatter.usesGroupingSeparator = true
+        currencyFormatter.numberStyle = .currency
+        // localize to your grouping and decimal separator
+        currencyFormatter.locale = NSLocale.current
+        let priceString = currencyFormatter.string(from: amount as NSNumber)
+        
+        return priceString!
     }
     
     override func didReceiveMemoryWarning() {
