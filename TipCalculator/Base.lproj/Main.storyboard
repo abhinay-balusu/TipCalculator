@@ -173,7 +173,6 @@
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="TZ7-w6-HQh">
                             <connections>
                                 <action selector="goToSettings:" destination="BYZ-38-t0r" id="Jsk-Wb-CpR"/>
-                                <segue destination="RV9-oI-RcI" kind="show" id="i2b-Yp-qLm"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -194,7 +193,7 @@
         <!--Settings View Controller-->
         <scene sceneID="Mxn-Fi-SSt">
             <objects>
-                <viewController id="RV9-oI-RcI" customClass="SettingsViewController" customModule="TipCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingVC" id="RV9-oI-RcI" customClass="SettingsViewController" customModule="TipCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0on-1V-wan"/>
                         <viewControllerLayoutGuide type="bottom" id="veq-YT-wJ6"/>
@@ -204,7 +203,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Default Tip Percentage:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcC-S8-aW7">
-                                <rect key="frame" x="16" y="111" width="188" height="30"/>
+                                <rect key="frame" x="16" y="67" width="188" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="4jC-dl-4bC"/>
                                     <constraint firstAttribute="width" constant="188" id="uAK-xr-YQf"/>
@@ -214,7 +213,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hrf-Nz-LFc">
-                                <rect key="frame" x="233" y="111" width="97" height="30"/>
+                                <rect key="frame" x="233" y="67" width="97" height="30"/>
                                 <color key="backgroundColor" red="0.12038145209999999" green="0.80226182940000001" blue="0.42462405559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="bJV-bd-flQ"/>

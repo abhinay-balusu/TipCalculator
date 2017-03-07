@@ -128,6 +128,16 @@ class ViewController: UIViewController , UITextFieldDelegate{
     
     @IBAction func goToSettings(_ sender: Any) {
         
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "SettingVC")
+    
+        let transition = CATransition()
+        transition.duration = 0.3
+        transition.type = "flip"
+        transition.subtype = kCATransitionFromLeft
+        self.navigationController?.view.layer.add(transition, forKey: kCATransition)
+        self.navigationController?.pushViewController(controller, animated: false)
+        
     }
     @IBAction func setTipPercentage(_ sender: UISegmentedControl) {
         
